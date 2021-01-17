@@ -58,7 +58,7 @@ export default {
       return resolve(await this.listDir(node.key))
     },
     async download(node) {
-      window.open('http://media.mayidance.cn/' + node.key)
+      window.open('https://mayidance.oss-cn-beijing.aliyuncs.com/' + node.key)
     },
     async listDir(dir) {
       let files = await client.list({
